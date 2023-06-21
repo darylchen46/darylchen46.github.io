@@ -125,23 +125,50 @@ body
     display: flex;
 }
 
+#sidebar-block
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: none;
+    opacity: 40%;
+}
+
 #module-nav table
 {
     width: 100%;
+    border-collapse: collapse;
+}
+
+#module-nav tr:hover
+{
+    background-color: #DEF2F1;
+    cursor: pointer;
+}
+
+#module-nav tr:hover th
+{
+    color: #17252A;
+    border-bottom: 2px solid #2B7A78;
 }
 
 #module-nav th
 {
+    color: #FEFFFF;
     height: 60px;
     width: 100%;
     font-weight: 400;
+    padding: 0;
     border-bottom: 2px solid #17252A;
 }
 
 #module-nav a
 {
     text-decoration: none;
-    color: #FEFFFF;
+    
 }
 
 #module-nav a:hover
@@ -209,6 +236,52 @@ body
     padding-right: 20px;
 }
 
+#tier-list
+{
+    margin-bottom: 20px;
+}
+
+.tier-table
+{
+    width: 100px;
+    border-collapse: collapse;
+}
+
+.tier-table tr
+{
+    height: 30px;
+}
+
+.s
+{
+    background-color: rgb(241, 76, 76);
+}
+
+.a
+{
+    background-color: orange;
+}
+
+.b
+{
+    background-color: rgb(255, 255, 3);
+}
+
+.c
+{
+    background-color: lightgreen;
+}
+
+.d
+{
+    background-color: lightblue;
+}
+
+.timetable
+{
+    width: 600px;
+}
+
 .modules
 {
     width: 700px;
@@ -240,8 +313,7 @@ body
     padding: 20px;
 }
 
-#y1s1,
-#y2s1
+.bubbles-dark
 {
     margin: 5px;
     padding: 20px;
@@ -250,8 +322,7 @@ body
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#y1s2,
-#y2s2
+.bubbles-light
 {
     margin: 5px;
     padding: 20px;
