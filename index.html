@@ -3,14 +3,66 @@
     <head>
         <title>Daryl Chen</title>
         <link rel="shortcut icon" type="image/jpg" href="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg">
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="app.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Welcome</h1>
-        <h2>Hi</h2>
-        <button>Instagram</button>
-        <button>GitHub</button>
-        <button>LinkedIn</button>
-        <button>Mod Reviews</button>
+        <div id="nav-bar">
+            <div id="menu">
+                <img id="menu-icon-white" src="icon/menu-icon-white.jpg" onclick="openSidebar()">
+            </div>
+            <div id="profile">
+                <a href="index.html"><img id="profile-pic" src="profile-pic.jpg"></a>
+                <long id="profile-name">Daryl Chen</long>
+            </div>
+            <div id="links">
+                <button><a href="#experiences">Experiences</a></button>
+                <button><a href="#hobbies">Hobbies</a></button>
+                <button><a href="mod-reviews.html">Mod Reviews</a></button>
+            </div>
+            <div id="social-media">
+                <a href="https://www.instagram.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/instagram-icon.webp"></a>
+                <a href="https://www.facebook.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/facebook-icon.webp"></a>
+                <a href="https://github.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/github-icon.png"></a>
+                <a href="https://www.linkedin.com/in/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/linkedin-icon.png"></a>
+                <a href="mailto: darylchen46@gmail.com"><img class="social-media-icon" src="icon/email-icon.png"></a>
+            </div>
+        </div>
+        <div id="sidebar">
+            <div id="sidebar-top">
+                <img id="menu-icon-black" src="icon/menu-icon-white.jpg" onclick="closeSidebar()">
+                <div id="profile">
+                    <a href="index.html"><img id="profile-pic" src="profile-pic.jpg"></a>
+                    <long id="profile-name">Daryl Chen</long>
+                </div>
+            </div>
+        </div>
+        <div id="intro">
+            <h1>Welcome</h1>
+            <p>I'm currently a Y2 student studying Pharmacy in the National University of Singapore. 
+        </div>  
+        <section id="experiences">
+            <h2>Experiences</h2>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>
+                    Rock Climbing
+                </li>
+                <li>
+                    Squash
+                </li>
+                <li>
+                    Badminton
+                </li>
+                <li>
+                    Table Tennis
+                </li>
+            </ul>
+        </section>
     </body>
 </html>
