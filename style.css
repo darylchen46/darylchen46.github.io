@@ -1,0 +1,332 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    padding-top: 120px;
+    font-family: roboto;
+    background-color: #3AAFA9;
+    color: #17252A;
+}
+
+#nav-bar
+{
+    background-color: #17252A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+#menu
+{
+    height: 120px;
+}
+
+#menu-icon-white
+{
+    height: 50px;
+}
+
+#menu-icon-white:hover
+{
+   cursor: pointer;
+}
+
+#profile
+{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#profile-pic
+{
+    height: 70px;
+    border-radius: 50px;
+}
+
+#profile-name
+{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: #FEFFFF;
+}
+
+#links
+{
+    margin-left: 20px;
+    display: flex;
+    flex: 1;
+}
+
+#links button
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #17252A;
+    border: none;
+    font-family: roboto;
+    font-size: 20px;
+    color: #FEFFFF;
+}
+
+#links button:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#links a
+{
+    text-decoration: none;
+    color: #FEFFFF;
+}
+
+#social-media
+{
+    margin-right: 20px;
+    display: flex;
+}
+
+#social-media button
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+}
+
+#social-media img
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 30px;
+}
+
+#sidebar
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    display: none;
+    background-color: #2B7A78;
+}
+
+#sidebar-top
+{
+    height: 120px;
+    display: flex;
+}
+
+#sidebar-block
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: none;
+    opacity: 40%;
+}
+
+#module-nav table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#module-nav tr:hover
+{
+    background-color: #DEF2F1;
+    cursor: pointer;
+}
+
+#module-nav tr:hover th
+{
+    color: #17252A;
+    border-bottom: 2px solid #2B7A78;
+}
+
+#module-nav th
+{
+    color: #FEFFFF;
+    height: 60px;
+    width: 100%;
+    font-weight: 400;
+    padding: 0;
+    border-bottom: 2px solid #17252A;
+}
+
+#module-nav a
+{
+    text-decoration: none;
+    
+}
+
+#module-nav a:hover
+{
+    cursor: pointer;
+}
+
+#menu-icon-black
+{
+    height: 50px;
+}
+
+#menu-icon-black:hover
+{
+   cursor: pointer;
+}
+
+#intro,
+#experiences,
+#hobbies
+{
+    padding-top: 120px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#intro
+{
+    height: 800px;
+}
+
+#intro h1
+{
+    font-size: 50px;
+}
+
+#intro p
+{
+    font-size: 20px;
+}
+
+#experiences
+{
+    height: 800px;
+}
+
+#experiences h2
+{
+    font-size: 30px;
+}
+
+#hobbies
+{
+    height: 800px;
+}
+
+#hobbies h2
+{
+    font-size: 30px;
+}
+
+#contents
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#tier-list
+{
+    margin-bottom: 20px;
+}
+
+.tier-table
+{
+    width: 100px;
+    border-collapse: collapse;
+}
+
+.tier-table tr
+{
+    height: 30px;
+}
+
+.s
+{
+    background-color: rgb(241, 76, 76);
+}
+
+.a
+{
+    background-color: orange;
+}
+
+.b
+{
+    background-color: rgb(255, 255, 3);
+}
+
+.c
+{
+    background-color: lightgreen;
+}
+
+.d
+{
+    background-color: lightblue;
+}
+
+.timetable
+{
+    width: 600px;
+}
+
+.modules
+{
+    width: 700px;
+    border: 1px solid #17252A;
+    border-collapse: collapse;
+}
+
+.modules a
+{
+    text-decoration: none;
+    color: #17252A;
+}
+
+.modules a:hover
+{
+    text-decoration: underline;
+}
+
+.modules th
+{
+    width: 100%;
+    padding: 10px;
+    background-color: #2B7A78;
+    color: #17252A;
+}
+
+.modules td
+{
+    padding: 20px;
+}
+
+.bubbles-dark
+{
+    margin: 5px;
+    padding: 20px;
+    background-color: #DEF2F1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bubbles-light
+{
+    margin: 5px;
+    padding: 20px;
+    background-color: #FEFFFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
