@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Daryl Chen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/jpg" href="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="app.js"></script>
@@ -41,6 +42,7 @@
                 </div>
             </div>
         </div>
+        <!-- End of navigation -->
         <div id="intro">
             <h1>Welcome</h1>
             <p>I'm currently a Y2 student studying Pharmacy in the National University of Singapore. 
@@ -65,5 +67,6 @@
                 </li>
             </ul>
         </section>
+        {% block body %}{% endblock %}
     </body>
 </html>
