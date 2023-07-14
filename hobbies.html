@@ -1,0 +1,85 @@
+<!DOCtype html>
+<html>
+    <head>
+        <title>Daryl Chen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" type="image/jpg" href="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="app.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav-bar">
+            <div id="menu">
+                <img id="menu-icon-white" src="icon/menu-icon-white.jpg" onclick="openSidebar()">
+            </div>
+            <div id="profile">
+                <a href="index.html"><img id="profile-pic" src="profile-pic.jpg"></a>
+                <long id="profile-name">Daryl Chen</long>
+            </div>
+            <div id="links">
+                <div id="links-container">
+                    <button><a href="about.html">About</a></button>
+                    <button id="hobbies-active"><a href="hobbies.html#hobbies">Hobbies</a></button>
+                    <button><a href="mod-reviews.html#contents">Mod Reviews</a></button>
+                    <button><a href="contact.html#contact">Contact</a></button>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar-block" onclick="closeSidebar()"></div>
+        <div id="sidebar">
+            <div id="sidebar-top">
+                <img id="menu-icon-black" src="icon/menu-icon-white.jpg" onclick="closeSidebar()">
+                <div id="profile">
+                    <a href="index.html"><img id="profile-pic" src="profile-pic.jpg"></a>
+                    <long id="profile-name">Daryl Chen</long>
+                </div>
+            </div>
+        </div>
+        <!-- End of navigation -->
+        <section id="hobbies">
+            <h1>These are my hobbies.</h1>
+            <p>I love to do sports.</p>
+            <div id="sports-div">
+                <div class="sport">
+                    <img src="images/climb.jpg">
+                    <div class="sport-overlay" href="rock.html">Rock Climbing</div>
+                </div>
+                <div class="sport">                   
+                    <img src="images/squash.jpg">
+                    <div class="sport-overlay">Squash</div>
+                </div>
+                <div class="sport">                    
+                    <img src="images/badminton.jpg">
+                    <div class="sport-overlay">Badminton</div>
+                </div>
+                <div class="sport">
+                    <img src="images/table.png">
+                    <div class="sport-overlay">Table Tennis</div>
+                </div>
+            </div>
+            <p>I also love to play video games. These are the games that I am currently still playing.</p>
+            <div id="games-div">
+                <div class="game">
+                    <a href="https://www.minecraft.net/en-us" target="_blank"><img src="images/minecraft.png"></a>
+                    <div class="game-overlay">Minecraft</div>
+                </div>
+                <div class="game">                   
+                    <a href="https://www.facebook.com/MouseHuntTheGame/" target="_blank"><img src="images/mousehunt.png"></a>
+                    <div class="game-overlay">MouseHunt</div>
+                </div>
+                <div class="game">                    
+                    <a href="https://beatstar.com/" target="_blank"><img src="images/beatstars.png"></a>
+                    <div class="game-overlay">Beatstars</div>
+                </div>
+                <div class="game">
+                    <a href="https://www.chess.com/" target="_blank"><img src="images/chess.png"></a>
+                    <div class="game-overlay">Chess.com</div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

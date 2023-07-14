@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Start of navigation -->
         <div id="nav-bar">
             <div id="menu">
                 <img id="menu-icon-white" src="icon/menu-icon-white.jpg" onclick="openSidebar()">
@@ -19,16 +20,12 @@
                 <long id="profile-name">Daryl Chen</long>
             </div>
             <div id="links">
-                <button><a href="index.html#experiences">Experiences</a></button>
-                <button><a href="index.html#hobbies">Hobbies</a></button>
-                <button><a href="mod-reviews.html">Mod Reviews</a></button>
-            </div>
-            <div id="social-media">
-                <a href="https://www.instagram.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/instagram-icon.webp"></a>
-                <a href="https://www.facebook.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/facebook-icon.webp"></a>
-                <a href="https://github.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/github-icon.png"></a>
-                <a href="https://www.linkedin.com/in/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/linkedin-icon.png"></a>
-                <a href="mailto: darylchen46@gmail.com"><img class="social-media-icon" src="icon/email-icon.png"></a>
+                <div id="links-container">
+                    <button><a href="about.html">About</a></button>
+                    <button><a href="hobbies.html#hobbies">Hobbies</a></button>
+                    <button id="mod-reviews-active"><a href="mod-reviews.html#contents">Mod Reviews</a></button>
+                    <button><a href="contact.html#contact">Contact</a></button>
+                </div>
             </div>
         </div>
         <div id="sidebar-block" onclick="closeSidebar()"></div>
@@ -51,42 +48,141 @@
                 </table>
             </div>
         </div>
+        <!-- End of navigation -->
         <div id="contents">
-            <h1>Year 1 Semester 2</h1>
-            <section>
-                <img class="timetable" src="timetable/y1s2.png">
-            </section>
-            <section id="tier-list">
+            <div id="mod-reviews-desc">
+                <h1>Year 1 Semester 2</h1>
+                <section>
+                    <img class="timetable" src="timetable/y1s2.png">
+                </section>
                 <h2>Tier List</h2>
                 <p>Here is the tier list for reference. My ranking for each module is not a reflection of my grades, but the difficulty of the modules and my overall enjoyment. Again, these are my own opinions so no please do not hate on me.</p>
-                <table class="tier-table">
-                    <tr class="s"><th>S</th></tr>
-                    <tr class="a"><th>A</th></tr>
-                    <tr class="b"><th>B</th></tr>
-                    <tr class="c"><th>C</th></tr>
-                    <tr class="d"><th>D</th></tr>
-                </table>
+            </div>
+            <table class="tier-table">
+                <tr class="s"><th>S</th></tr>
+                <tr class="a"><th>A</th></tr>
+                <tr class="b"><th>B</th></tr>
+                <tr class="c"><th>C</th></tr>
+                <tr class="d"><th>D</th></tr>
+            </table>
+            <section id="pr1150" class="mod">
+                <div class="bubbles-dark">
+                    <h2><a href="https://nusmods.com/modules/PR1150/professional-identity-development-i" target="_blank">PR1150 Professional Identity Development I</a></h2>
+                    <h3>Module Coordinators/Professors</h3>
+                    <p><b>Dr. Erica Grasso</b>, Dr. Leroy Koh, Dr. Wong Pei Shieen, Dr. Wang Aiwen, Dr. Emina Obarcanin</p>
+                    <h3>Workload</h3>
+                    40% Class Tests<br> 
+                    30% Reflection Essay<br>
+                    30% Presentations
+                    <h3>Overview</h3>
+                    <p>This module is a year-long and a CS/CU (pass/fail) module that covers 4 MCs. Since it's a year-long module, the workload is split into 2 semesters so it is technically worth 2 MCs per semester. From what I recall, it is mostly a fluff mod where you have tutorials that mainly discuss on ethics and the legal principles of being a pharmacist while understanding the different career paths for a Pharmacy student. In the first semester, the main bulk of the work includes a group presentation which requires an interview with an assigned NUS Pharmacy alumni in the different industries. Class tests were all open book during tutorials. A submission of a draft of the reflection essay was required at the end of the semester which the profs will provide feedback for.</p>
+                    <h3>Thoughts</h3>
+                    <p>This module was really chill considering that it was year-long and pass/fail. Didn't have to touch the module or study for the class tests apart from interviewing the Pharmacy alumni and preparing for the presentations. The reflection essay only required about 300-400 words so it could be done within a day. The only downside is that it is year-long so the burden of the module is carried over to the next semester.</p>
+                    <h3>Overall Tier</h3>
+                    <table class="tier-table"><tr class="a"><th>A</th></tr></table>
+                </div>
             </section>
-            <section id="pr1150" class="bubbles-dark">
-                <h2>PR1150 Professional Identity Development I</h2>
+            <section id="pr1151" class="mod">
+                <div class="bubbles-light">
+                    <h2><a href="https://nusmods.com/modules/PR1151/applied-patient-care-skills-i" target="_blank">PR1151 Applied Patient Care Skills I</a></h2>
+                    <h3>Module Coordinators/Professors</h3>
+                    <p><b>A/Prof Priscilla How</b>, A/Prof Chan Sui Yung, A/Prof Lita Chew, Dr. Ong Pei Shi, Dr. Yap Kai Zhen, Dr. Wang Aiwen</p>
+                    <h3>Workload</h3>
+                    25% Compounding Practical Test<br> 
+                    75% Skills Labs<br>
+                    <h3>Overview</h3>
+                    <p>Along with PR1150, this module is also a year-long module that covers 4 MCs. The difference between PR1151 and PR1150 is that PR1151 is graded. This module teaches on the basics of compounding and formulation of the final medicinal products such as capsules or solutions, as well as the fundamentals of interacting with patients as a future Pharmacist. The first semester focuses mainly on compounding.</p>
+                    <h3>Thoughts</h3>
+                    <p>I would say, this was the module that I disliked the most in the semester. The amount of information thrown at you for the compounding practicals is immense and studying for the tests is no joke. A small mistake in the test could cost a failure as the profs want the students to simulate real life situations where no mistakes can be made when preparing and dispensing the drug products. Fair to say this makes sense considering that we do not want to kill patients in the real world, but I still struggled throughout the semester learning compounding. This module felt like a whole ass 4 MC module in one semester for a the amount of work required. It was a really painful module to take and I dreaded every tutorial session going to classes. The only thing that was keeping my sanity in check were my group mates during each tutorial.</p>
+                    <h3>Overall Tier</h3>
+                    <table class="tier-table"><tr class="c"><th>C</th></tr></table>
+                </div>
             </section>
-            <section id="pr1151" class="bubbles-light">
-                <h2>PR1151 Applied Patient Care Skills I</h2>
+            <section id="pr1153" class="mod">
+                <div class="bubbles-dark">
+                    <h2><a href="https://nusmods.com/modules/PR1153/pharmacy-foundations-science-therapeutics-ii" target="_blank">PR1153 Pharmacy Foundations: Science & Therapeutics II</a></h2>
+                    <h3>Module Coordinators/Professors</h3>
+                    <p><b>A/Prof Chui Wai Keung</b>, Dr. Chng Hui Ting, A/Prof Rajamani Lakshminarayanan, A/Prof Tan Kong Bing, Asst Prof Cheok Chit Fang, A/Prof Nga Min En, Asst Prof Seet Ju Ee, Asst Prof Justin Wong</p>
+                    <h3>Workload</h3>
+                    25% Midterms<br>
+                    25% Group Project<br> 
+                    50% Finals<br>
+                    <h3>Overview</h3>
+                    <p>Along with PR1150, this module is also a year-long module that covers 4 MCs. The difference between PR1151 and PR1150 is that PR1151 is graded. This module teaches on the basics of compounding and formulation of the final medicinal products such as capsules or solutions, as well as the fundamentals of interacting with patients as a future Pharmacist. The first semester focuses mainly on compounding.</p>
+                    <h3>Thoughts</h3>
+                    <p>I would say, this was the module that I disliked the most in the semester. The amount of information thrown at you for the compounding practicals is immense and studying for the tests is no joke. A small mistake in the test could cost a failure as the profs want the students to simulate real life situations where no mistakes can be made when preparing and dispensing the drug products. Fair to say this makes sense considering that we do not want to kill patients in the real world, but I still struggled throughout the semester learning compounding. This module felt like a whole ass 4 MC module in one semester for a the amount of work required. It was a really painful module to take and I dreaded every tutorial session going to classes. The only thing that was keeping my sanity in check were my group mates during each tutorial.</p>
+                    <h3>Overall Tier</h3>
+                    <table class="tier-table"><tr class="a"><th>A</th></tr></table>
+                </div>
             </section>
-            <section id="pr1153" class="bubbles-dark">
-                <h2>PR1152 Pharmacy Foundations: Science & Therapeutics I</h2>
+            <section id="pr2156" class="mod">
+                <div class="bubbles-light">
+                    <h2><a href="https://nusmods.com/modules/PR2156/integumentary-ocular-systems-science-and-therapeutics" target="_blank">PR2156 Integumentary & Ocular Systems: Science and Therapeutics</a></h2> 
+                    <h3>Module Coordinators/Professors</h3>
+                    <p><b>Prof Paul Gallagher</b>, Dr. Linda Hong, Mr. Li Benny, A/Prof Wacker Matthiass, Dr. Wang Aiwen</p>
+                    <h3>Workload</h3>
+                    20% Class Tests<br> 
+                    20% Group Practical Reports<br>
+                    10% Group Assignment<br>
+                    50% Finals
+                    <h3>Overview</h3>
+                    <p>Along with PR1150, this module is also a year-long module that covers 4 MCs. The difference between PR1151 and PR1150 is that PR1151 is graded. This module teaches on the basics of compounding and formulation of the final medicinal products such as capsules or solutions, as well as the fundamentals of interacting with patients as a future Pharmacist. The first semester focuses mainly on compounding.</p>
+                    <h3>Thoughts</h3>
+                    <p>I would say, this was the module that I disliked the most in the semester. The amount of information thrown at you for the compounding practicals is immense and studying for the tests is no joke. A small mistake in the test could cost a failure as the profs want the students to simulate real life situations where no mistakes can be made when preparing and dispensing the drug products. Fair to say this makes sense considering that we do not want to kill patients in the real world, but I still struggled throughout the semester learning compounding. This module felt like a whole ass 4 MC module in one semester for a the amount of work required. It was a really painful module to take and I dreaded every tutorial session going to classes. The only thing that was keeping my sanity in check were my group mates during each tutorial.</p>
+                    <h3>Overall Tier</h3>
+                    <table class="tier-table"><tr class="c"><th>C</th></tr></table>
+                </div>
             </section>
-            <section id="pr2156" class="bubbles-light">
-                <h2>PR2156 Integumentary & Ocular Systems: Science and Therapeutics</h2> 
+            <section id="gex1010" class="mod">
+                <div class="bubbles-dark">
+                    <h2><a href="https://nusmods.com/modules/GEX1010/thinking-like-an-economist" target="_blank">GEX1010 Thinking like an Economist</a></h2> 
+                    <h3>Module Coordinators/Professors</h3>
+                    <p><b>Dr. Georgios Georgiou</b></p>
+                    <h3>Workload</h3>
+                    10% Tutorial Participation<br> 
+                    10% Lecture Polls<br>
+                    15% Online Quizzes<br>
+                    30% Midterms<br>
+                    35% Finals
+                    <h3>Overview</h3>
+                    <p>Along with PR1150, this module is also a year-long module that covers 4 MCs. The difference between PR1151 and PR1150 is that PR1151 is graded. This module teaches on the basics of compounding and formulation of the final medicinal products such as capsules or solutions, as well as the fundamentals of interacting with patients as a future Pharmacist. The first semester focuses mainly on compounding.</p>
+                    <h3>Thoughts</h3>
+                    <p>I would say, this was the module that I disliked the most in the semester. The amount of information thrown at you for the compounding practicals is immense and studying for the tests is no joke. A small mistake in the test could cost a failure as the profs want the students to simulate real life situations where no mistakes can be made when preparing and dispensing the drug products. Fair to say this makes sense considering that we do not want to kill patients in the real world, but I still struggled throughout the semester learning compounding. This module felt like a whole ass 4 MC module in one semester for a the amount of work required. It was a really painful module to take and I dreaded every tutorial session going to classes. The only thing that was keeping my sanity in check were my group mates during each tutorial.</p>
+                    <h3>Overall Tier</h3>
+                    <table class="tier-table"><tr class="s"><th>S</th></tr></table>
+                </div>
             </section>
-            <section id="gex1010" class="bubbles-dark">
-                <h2>GEX1010 Thinking like an Economist</h2> 
+            <section id="gec1009" class="mod">
+                <div class="bubbles-light">
+                    <h2><a href="https://nusmods.com/modules/GEC1009/drugs-and-society" target="_blank">GEC1009 Drugs and Society</a></h2> 
+                    <h3>Module Coordinators/Professors</h3>
+                    <p><b>A/Prof Go Mei Lin</b>, Dr. Linda Hong</p>
+                    <h3>Workload</h3>
+                    25% Compounding Practical Test<br> 
+                    75% Skills Labs<br>
+                    <h3>Overview</h3>
+                    <p>Along with PR1150, this module is also a year-long module that covers 4 MCs. The difference between PR1151 and PR1150 is that PR1151 is graded. This module teaches on the basics of compounding and formulation of the final medicinal products such as capsules or solutions, as well as the fundamentals of interacting with patients as a future Pharmacist. The first semester focuses mainly on compounding.</p>
+                    <h3>Thoughts</h3>
+                    <p>I would say, this was the module that I disliked the most in the semester. The amount of information thrown at you for the compounding practicals is immense and studying for the tests is no joke. A small mistake in the test could cost a failure as the profs want the students to simulate real life situations where no mistakes can be made when preparing and dispensing the drug products. Fair to say this makes sense considering that we do not want to kill patients in the real world, but I still struggled throughout the semester learning compounding. This module felt like a whole ass 4 MC module in one semester for a the amount of work required. It was a really painful module to take and I dreaded every tutorial session going to classes. The only thing that was keeping my sanity in check were my group mates during each tutorial.</p>
+                    <h3>Overall Tier</h3>
+                    <table class="tier-table"><tr class="c"><th>C</th></tr></table>
+                </div>
             </section>
-            <section id="gec1009" class="bubbles-light">
-                <h2>GEC1009 Drugs and Society</h2> 
-            </section>
-            <section id="cs1010s" class="bubbles-dark">
-                <h2>CS1010S Programming Methodology</h2> 
+            <section id="cs1010s" class="mod">
+                <div class="bubbles-dark">
+                    <h2><a href="https://nusmods.com/modules/CS1010S/programming-methodology" target="_blank">CS1010S Programming Methodology</a></h2> 
+                    <h3>Module Coordinators/Professors</h3>
+                    <p><b>Dr. Ashish Dandekar</b>, Dr. Leong Wai Kay, Dr. Nitya Lakshmanan, </p>
+                    <h3>Workload</h3>
+                    25% Compounding Practical Test<br> 
+                    75% Skills Labs<br>
+                    <h3>Overview</h3>
+                    <p>Along with PR1150, this module is also a year-long module that covers 4 MCs. The difference between PR1151 and PR1150 is that PR1151 is graded. This module teaches on the basics of compounding and formulation of the final medicinal products such as capsules or solutions, as well as the fundamentals of interacting with patients as a future Pharmacist. The first semester focuses mainly on compounding.</p>
+                    <h3>Thoughts</h3>
+                    <p>I would say, this was the module that I disliked the most in the semester. The amount of information thrown at you for the compounding practicals is immense and studying for the tests is no joke. A small mistake in the test could cost a failure as the profs want the students to simulate real life situations where no mistakes can be made when preparing and dispensing the drug products. Fair to say this makes sense considering that we do not want to kill patients in the real world, but I still struggled throughout the semester learning compounding. This module felt like a whole ass 4 MC module in one semester for a the amount of work required. It was a really painful module to take and I dreaded every tutorial session going to classes. The only thing that was keeping my sanity in check were my group mates during each tutorial.</p>
+                    <h3>Overall Tier</h3>
+                    <table class="tier-table"><tr class="a"><th>A</th></tr></table>
+                </div>
             </section>
         </div>
     </body>

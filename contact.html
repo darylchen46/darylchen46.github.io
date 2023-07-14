@@ -1,0 +1,91 @@
+<!DOCtype html>
+<html>
+    <head>
+        <title>Daryl Chen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" type="image/jpg" href="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="app.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav-bar">
+            <div id="menu">
+                <img id="menu-icon-white" src="icon/menu-icon-white.jpg" onclick="openSidebar()">
+            </div>
+            <div id="profile">
+                <a href="index.html"><img id="profile-pic" src="profile-pic.jpg"></a>
+                <long id="profile-name">Daryl Chen</long>
+            </div>
+            <div id="links">
+                <div id="links-container">
+                    <button><a href="about.html">About</a></button>
+                    <button><a href="hobbies.html#hobbies">Hobbies</a></button>
+                    <button><a href="mod-reviews.html#contents">Mod Reviews</a></button>
+                    <button id="contact-active"><a href="contact.html#contact">Contact</a></button>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar-block" onclick="closeSidebar()"></div>
+        <div id="sidebar">
+            <div id="sidebar-top">
+                <img id="menu-icon-black" src="icon/menu-icon-white.jpg" onclick="closeSidebar()">
+                <div id="profile">
+                    <a href="index.html"><img id="profile-pic" src="profile-pic.jpg"></a>
+                    <long id="profile-name">Daryl Chen</long>
+                </div>
+            </div>
+        </div>
+        <!-- End of navigation -->
+        <section id="contact">
+            <h1>Contact</h1>
+            <div id="contact-bubble">
+                <table id="social-media-table">
+                    <tr>
+                        <th>
+                            <a class="social-media-tag" href="https://www.facebook.com/darylchen46/" target="_blank">Facebook</a>
+                        </th>
+                        <td>
+                            <a class="social-media-icon" href="https://www.facebook.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/facebook-icon.webp"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a class="social-media-tag" href="https://www.instagram.com/darylchen46/" target="_blank">Instagram</a>
+                        </th>
+                        <td>
+                            <a class="social-media-icon" href="https://www.instagram.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/instagram-icon.webp"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a class="social-media-tag" href="https://github.com/darylchen46/" target="_blank">GitHub</a>                            
+                        </th>
+                        <td>
+                            <a class="social-media-icon" href="https://github.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/github-icon.png"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a class="social-media-tag" href="https://www.linkedin.com/in/darylchen46/" target="_blank">LinkedIn</a>                           
+                        </th>
+                        <td>
+                            <a class="social-media-icon" href="https://www.linkedin.com/in/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/linkedin-icon.png"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a class="social-media-tag" href="mailto: darylchen46@gmail.com">Gmail</a>                         
+                        </th>
+                        <td>
+                            <a class="social-media-icon" href="mailto: darylchen46@gmail.com"><img class="social-media-icon" src="icon/email-icon.png"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>  
+    </body>
+</html>

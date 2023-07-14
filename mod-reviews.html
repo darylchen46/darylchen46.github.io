@@ -19,16 +19,12 @@
                 <long id="profile-name">Daryl Chen</long>
             </div>
             <div id="links">
-                <button><a href="index.html#experiences">Experiences</a></button>
-                <button><a href="index.html#hobbies">Hobbies</a></button>
-                <button><a href="mod-reviews.html">Mod Reviews</a></button>
-            </div>
-            <div id="social-media">
-                <a href="https://www.instagram.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/instagram-icon.webp"></a>
-                <a href="https://www.facebook.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/facebook-icon.webp"></a>
-                <a href="https://github.com/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/github-icon.png"></a>
-                <a href="https://www.linkedin.com/in/darylchen46/" target="_blank"><img class="social-media-icon" src="icon/linkedin-icon.png"></a>
-                <a href="mailto: darylchen46@gmail.com"><img class="social-media-icon" src="icon/email-icon.png"></a>
+                <div id="links-container">
+                    <button><a href="about.html">About</a></button>
+                    <button><a href="hobbies.html#hobbies">Hobbies</a></button>
+                    <button id="mod-reviews-active"><a href="mod-reviews.html#contents">Mod Reviews</a></button>
+                    <button><a href="contact.html#contact">Contact</a></button>
+                </div>
             </div>
         </div>
         <div id="sidebar-block" onclick="closeSidebar()"></div>
@@ -53,139 +49,188 @@
                 </table>
             </div>
         </div>
+        <!-- End of navigation -->
         <div id="contents">
-            <h1>Mod Reviews</h1>
-            <p>Welcome to my mod reviews. All of these reviews are based on my own opinions so please take them with a pinch of salt.</p>
-            <section id="tier-list">
+            <div id="mod-reviews-desc">
+                <h1>Mod Reviews</h1>
+                <p>Welcome to my mod reviews. All of these reviews are based on my own opinions so please take them with a pinch of salt.</p>
                 <h2>Tier List</h2>
-                <p>I ranked my modules based on their overall enjoyment as well as difficulty. With S being the best and D being absolute trash. Again, these are my own opinions so no please do not hate on me.</p>
-                <table class="tier-table">
-                    <tr class="s"><th>S</th></tr>
-                    <tr class="a"><th>A</th></tr>
-                    <tr class="b"><th>B</th></tr>
-                    <tr class="c"><th>C</th></tr>
-                    <tr class="d"><th>D</th></tr>
-                </table>
-            </section>
-            <section id="y1s1" class="bubbles-dark">
-                <h2>Year 1 Semester 1</h2>
-                <p>These were the mods I took in Year 1 Semester 1. As a Pharmacy Major in Y1S1, all mods were pre-allocated so there was no need to bid for mods. Quite a chill semester considering I was still a freshie.</p>
-                <table class="modules">
-                    <tr>
-                        <th>Module</th>
-                        <th>MCs</th>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s1.html#pr1150">PR1150 Professional Identity Development I</a></td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s1.html#pr1151">PR1151 Applied Patient Care Skills I</a></td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s1.html#pr1152">PR1152 Pharmacy Foundations: Science & Therapeutics I</a></td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s1.html#gea1000">GEA1000 Quantitative Reasoning with Data</a></td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s1.html#sph1901">SPH1901 Social and Behavioural Determinants of Health</a></td>
-                        <td>4</td>
-                    </tr>
-                </table>
-            </section>
-            <section id="y1s2" class="bubbles-light">
-                <h2>Year 1 Semester 2</h2>
-                <p>These were the mods I took in Year 1 Semester 2. Decided to overload 24MCs worth of modules as I had planned to clear all the GE pillars and lighten the workload in the senior years to focus on internships. This is the semester where I discovered my passion in Computer Science and decided to do a course switch.</p>
-                <table class="modules">
-                    <tr>
-                        <th>Module</th>
-                        <th>MCs</th>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s2.html#pr1150">PR1150 Professional Identity Development I</a></td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s2.html#pr1151">PR1151 Applied Patient Care Skills I</a></td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s2.html#pr1153">PR1153 Pharmacy Foundations: Science & Therapeutics II</a></td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s2.html#pr2156">PR2156 Integumentary & Ocular Systems: Science and Therapeutics</a></td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s2.html#gex1010">GEX1010 Thinking like an Economist</a></td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s2.html#gec1009">GEC1009 Drugs and Society</a></td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td><a href="y1s2.html#cs1010s">CS1010S Programming Methodology</a></td>
-                        <td>4</td>
-                    </tr>           
-                </table>
-            </section>
-            <section id="y2s1" class="bubbles-dark">
-                <h2>Year 2 Semester 1</h2>
-                <p>Planning to take these modules in Year 2 Semester 1.</p>
-                <table class="modules">
-                    <tr>
-                        <th>Module</th>
-                        <th>MCs</th>
-                    </tr>
-                    <tr>
-                        <td>CS2100 Computer Organisation</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>CS1231S Discrete Structures</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>CS2020S Programming Methodology II</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>MA1521 Calculus for Computing</td>
-                        <td>4</td>
-                    </tr>
-                </table>
-            </section>
-            <section id="y2s2" class="bubbles-light">
-            <h2>Year 2 Semester 2</h2>
-            <p>Hi</p>
-            <table class="modules">
-                <tr>
-                    <th>Module</th>
-                    <th>MCs</th>
-                </tr>
-                <tr>
-                    <td>CS2100 Computer Organisation</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>CS1231S Discrete Structures</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>CS2020S Programming Methodology II</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>MA1521 Calculus for Computing</td>
-                    <td>4</td>
-                </tr>
+                <p>I ranked my modules based on their overall enjoyment as well as difficulty. With S being the best and D being absolute trash. These are my own opinions so no please do not hate on me.</p>   
+            </div>
+            <table class="tier-table">
+                <tr class="s"><th>S</th></tr>
+                <tr class="a"><th>A</th></tr>
+                <tr class="b"><th>B</th></tr>
+                <tr class="c"><th>C</th></tr>
+                <tr class="d"><th>D</th></tr>
             </table>
+            <section id="y1s1" class="mod">
+                <div class="bubbles-dark">
+                    <h2><a href="y1s1.html#contents">Year 1 Semester 1</a></h2>
+                    <p>These were the mods I took in Year 1 Semester 1. As a Pharmacy Major in Y1S1, all mods were pre-allocated so there was no need to bid for mods. Quite a chill semester considering I was still a freshie.</p>
+                    <table class="modules">
+                        <tr>
+                            <th>Module</th>
+                            <th>MCs</th>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s1.html#pr1150">PR1150 Professional Identity Development I</a></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s1.html#pr1151">PR1151 Applied Patient Care Skills I</a></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s1.html#pr1152">PR1152 Pharmacy Foundations: Science & Therapeutics I</a></td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s1.html#gea1000">GEA1000 Quantitative Reasoning with Data</a></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s1.html#sph1901">SPH1901 Social and Behavioural Determinants of Health</a></td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="y1s2" class="mod">
+                <div class="bubbles-light">
+                    <h2><a href="y1s2.html#contents">Year 1 Semester 2</a></h2>
+                    <p>These were the mods I took in Year 1 Semester 2. Decided to overload 24MCs worth of modules as I had planned to clear all the GE pillars and lighten the workload in the senior years to focus on internships. This is the semester where I discovered my passion in Computer Science and decided to do a course switch.</p>
+                    <table class="modules">
+                        <tr>
+                            <th>Module</th>
+                            <th>MCs</th>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s2.html#pr1150">PR1150 Professional Identity Development I</a></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s2.html#pr1151">PR1151 Applied Patient Care Skills I</a></td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s2.html#pr1153">PR1153 Pharmacy Foundations: Science & Therapeutics II</a></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s2.html#pr2156">PR2156 Integumentary & Ocular Systems: Science and Therapeutics</a></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s2.html#gex1010">GEX1010 Thinking like an Economist</a></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s2.html#gec1009">GEC1009 Drugs and Society</a></td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td><a href="y1s2.html#cs1010s">CS1010S Programming Methodology</a></td>
+                            <td>4</td>
+                        </tr>           
+                    </table>
+                </div>
+            </section>
+            <section id="y2s1" class="mod">
+                <div class="bubbles-dark">
+                    <h2>Year 2 Semester 1</h2>
+                    <p>Planning to take these modules in Year 2 Semester 1.</p>
+                    <table class="modules">
+                        <tr>
+                            <th>Module</th>
+                            <th>MCs</th>
+                        </tr>
+                        <tr>
+                            <td>CS2100 Computer Organisation</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CS1231S Discrete Structures</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CS2030S Programming Methodology II</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>MA1521 Calculus for Computing</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>GEX1014 Logic</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="y2s2" class="mod">
+                <div class="bubbles-light">
+                    <h2>Year 2 Semester 2</h2>
+                    <p>Planning to take these modules in Year 2 Semester 2.</p>
+                    <table class="modules">
+                        <tr>
+                            <th>Module</th>
+                            <th>MCs</th>
+                        </tr>
+                        <tr>
+                            <td>CS2040S Data Structures and Algorithms</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CS2106 Introduction to Operating Systems</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>HSI1000 How Science Works, Why Science Works</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>MA2001 Linear Algebra I</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>ES2660 Communicating in the Information Age</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="y3s1" class="mod">
+                <div class="bubbles-dark">
+                    <h2>Year 3 Semester 1</h2>
+                    <p>Planning to take these modules in Year 3 Semester 1.</p>
+                    <table class="modules">
+                        <tr>
+                            <th>Module</th>
+                            <th>MCs</th>
+                        </tr>
+                        <tr>
+                            <td>CS2040S Data Structures and Algorithms</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>CS2106 Introduction to Operating Systems</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>HSI1000 How Science Works, Why Science Works</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>MA2001 Linear Algebra I</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>ES2660 Communicating in the Information Age</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
         </div>
     </body>
