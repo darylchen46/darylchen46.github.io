@@ -60,6 +60,14 @@ h4 { font-size: 1rem; margin: 0; }
 
 .lead { font-size: 1.1rem; color: var(--muted); }
 
+.resume { 
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 22px;
+  margin: 16px 0;
+ }
+
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
