@@ -56,6 +56,7 @@ main { padding-top: 40px; padding-bottom: 56px; }
 h1 { font-size: 2rem; margin: 0 0 8px; }
 h2 { font-size: 1.3rem; margin: 40px 0 12px; }
 h3 { font-size: 1.05rem; margin: 0; }
+h4 { font-size: 1rem; margin: 0; }
 
 .lead { font-size: 1.1rem; color: var(--muted); }
 
