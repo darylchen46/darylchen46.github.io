@@ -63,6 +63,7 @@ h4 { font-size: 1rem; margin: 0; }
   animation: blink 1s infinite;
   margin-left: 2px;
   color:#0f766e;
+  bottom: 0.15em;
 }
 
 @keyframes blink {
