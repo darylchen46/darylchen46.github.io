@@ -60,7 +60,7 @@ h4 { font-size: 1rem; margin: 0; }
 
 #greet::after {
   content: "|";
-  animation: blink 0.75s infinite;
+  animation: blink 1s infinite;
   margin-left: 2px;
   color:#0f766e;
 }
