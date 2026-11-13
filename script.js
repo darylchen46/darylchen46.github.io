@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const speed = 100; // Typing speed in milliseconds
   const delay = 1000; // Delay before starting the typing effect
 
-  setTimeout(typeWriter, delay);
-
   function typeWriter() {
     if (index < fullText.length) {
       heading.textContent += fullText.charAt(index);
@@ -17,6 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  typeWriter();
+  setTimeout(typeWriter, delay);
 });
 
