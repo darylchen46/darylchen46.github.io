@@ -70,8 +70,8 @@ h4 { font-size: 1rem; margin: 0; }
   position: absolute;
   left: 3px;
   bottom: -0.2em;
+  color:#0f766e;
   height: 1em;
-  border-left: 0.07em solid var(--accent);
   animation: blink 1s infinite;
 }
 

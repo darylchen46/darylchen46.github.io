@@ -6,6 +6,23 @@
   <title>Daryl Chen | Pharmacy, Data and Automation</title>
   <meta name="description" content="Pharmacy graduate with a Computer Science minor, building data and automation tools in healthcare.">
   <link rel="icon" type="image/svg+xml" href="images/dc-icon.svg">
+  
+    <!-- Splash intro: runs once per browser session, skipped if the visitor prefers reduced motion.
+       Must stay in <head> so the dark screen shows before the page paints. -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      try {
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!reduce && !sessionStorage.getItem("splashPlayed")) root.classList.add("splash");
+      } catch (e) {}
+      // Failsafe: never leave a visitor stuck on the splash screen
+      setTimeout(function () {
+        root.classList.remove("splash", "splash-ready", "splash-leaving");
+      }, 9000);
+    })();
+  </script>
+
   <link rel="stylesheet" href="css/style.css">
   <script src="script.js" defer></script>
 </head>
