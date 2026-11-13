@@ -69,9 +69,9 @@ h4 { font-size: 1rem; margin: 0; }
   content: "";
   position: absolute;
   left: 3px;
-  bottom: -0.2em;
-  color:#0f766e;
+  bottom: -0.5em;
   height: 1em;
+  border-left: 0.1em solid var(--accent);
   animation: blink 1s infinite;
 }
 
