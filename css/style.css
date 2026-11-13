@@ -9,6 +9,9 @@
 
 * { box-sizing: border-box; }
 
+/* Keeps layout identical whether or not the scrollbar is visible (needed for the splash intro) */
+html { scrollbar-gutter: stable; }
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -58,12 +61,18 @@ h2 { font-size: 1.3rem; margin: 40px 0 12px; }
 h3 { font-size: 1.05rem; margin: 0; }
 h4 { font-size: 1rem; margin: 0; }
 
-#greet::after {
-  content: "|";
+/* ---------- Typewriter heading ---------- */
+#greet { width: fit-content; white-space: pre; }
+#greet .ghost { visibility: hidden; }
+#greet .cursor { display: inline-block; position: relative; width: 0; }
+#greet .cursor::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  bottom: -0.2em;
+  height: 1em;
+  border-left: 0.07em solid var(--accent);
   animation: blink 1s infinite;
-  margin-left: 2px;
-  color:#0f766e;
-  bottom: 0.15em;
 }
 
 @keyframes blink {
@@ -204,6 +213,60 @@ footer { animation: fade-up 0.7s ease-out 1.2s both; }
 .tags li:nth-child(2) { animation-delay: 1.1s; }
 .tags li:nth-child(3) { animation-delay: 1.2s; }
 .tags li:nth-child(4) { animation-delay: 1.3s; }
+
+/* ---------- Splash intro (dark, centred typewriter) ----------
+   Classes on <html>, managed by the inline script in index.html and script.js:
+   splash          – splash screen is active
+   splash-ready    – heading has been placed at the centre, so it can be shown
+   splash-leaving  – overlay fades out and the name travels back to its place
+   splash-done     – splash has finished (heading must not replay its fade-up)  */
+
+html.splash { overflow: hidden; }
+
+/* Dark overlay */
+html.splash body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: radial-gradient(ellipse at 50% 45%, #14202b 0%, #0b0f14 65%);
+  opacity: 1;
+  transition: opacity 0.9s ease;
+}
+html.splash.splash-leaving body::before {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* The heading sits above the overlay, in light colours */
+html.splash #greet {
+  position: relative;
+  z-index: 101;
+  color: #f5f7fa;
+  animation: none;
+}
+html.splash:not(.splash-ready) #greet { opacity: 0; }
+html.splash #greet .cursor::after { border-left-color: #2dd4bf; }
+
+/* Heading travels back to its original spot and takes its normal colours */
+html.splash.splash-leaving #greet {
+  color: var(--text);
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1), color 1s ease;
+}
+html.splash.splash-leaving #greet .cursor::after {
+  border-left-color: var(--accent);
+  transition: border-left-color 1s ease;
+}
+html.splash-done #greet { animation: none; }
+
+/* Rest of the page waits until the name starts moving, then fades in as usual */
+html.splash:not(.splash-leaving) header.site .inner,
+html.splash:not(.splash-leaving) footer,
+html.splash:not(.splash-leaving) main > :not(#greet) {
+  animation: none;
+  opacity: 0;
+}
+html.splash:not(.splash-leaving) .tags li { animation: none; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
