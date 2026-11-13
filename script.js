@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   heading.textContent = ""; // Clear text initially
 
   let index = 0;
-  const speed = 60; // Typing speed in milliseconds
+  const speed = 100; // Typing speed in milliseconds
 
   function typeWriter() {
     if (index < fullText.length) {
