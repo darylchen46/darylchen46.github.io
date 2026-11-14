@@ -13,6 +13,7 @@
 html { 
   scrollbar-gutter: stable;
   scroll-behavior: smooth;
+  scroll-padding-top: 64px;
 }
 
 @import url('https://googleapis.com');
@@ -102,7 +103,7 @@ h4 { font-size: 1rem; margin: 0; }
   text-decoration: none;
  }
 
-#experience { scroll-margin-top: 65px; }
+/* #experience { scroll-margin-top: 65px; } */
 
 .card {
   background: var(--surface);
