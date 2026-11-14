@@ -10,15 +10,12 @@
 * { box-sizing: border-box; }
 
 /* Keeps layout identical whether or not the scrollbar is visible (needed for the splash intro) */
-html { 
-  scrollbar-gutter: stable; 
-  scroll-behavior: smooth; 
-}
+html { scrollbar-gutter: stable; }
 
 @import url('https://googleapis.com');
 
 body {
-  margin: 40px 0 0;
+  margin: 0;
   font-family: 'JetBrains Mono', monospace;
   line-height: 1.65;
   color: var(--text);
@@ -28,12 +25,6 @@ body {
 header.site {
   border-bottom: 1px solid var(--border);
   background: var(--surface);
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
 }
 
 header.site .inner,
@@ -63,15 +54,9 @@ nav a {
   padding-bottom: 2px;
 }
 nav a:hover { color: var(--accent); }
-nav a.active::after { color: var(--accent); border-bottom: 2px solid var(--accent); }
+nav a.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
 
 main { padding-top: 40px; padding-bottom: 56px; }
-
-#opening {
-  margin-top: 100px;
-  min-height: 100dvh;
-  align-items: center;
-}
 
 h1 { font-size: 2rem; margin: 0 0 8px; }
 h2 { font-size: 1.3rem; margin: 40px 0 12px; }
@@ -79,12 +64,7 @@ h3 { font-size: 1.05rem; margin: 0; }
 h4 { font-size: 1rem; margin: 0; }
 
 /* ---------- Typewriter heading ---------- */
-#greet { 
-  width: fit-content; 
-  justify-content: center;
-  white-space: pre;
-  font-size: 4.8rem;
-}
+#greet { width: fit-content; white-space: pre; }
 #greet .ghost { visibility: hidden; }
 #greet .cursor { display: inline-block; position: relative; width: 0; }
 #greet .cursor::after {
@@ -102,7 +82,7 @@ h4 { font-size: 1rem; margin: 0; }
   50% { opacity: 0; }
 }
 
-.lead { font-size: 1.5rem; color: var(--muted); }
+.lead { font-size: 1.1rem; color: var(--muted); }
 
 .resume { 
   background: var(--surface);
@@ -112,10 +92,6 @@ h4 { font-size: 1rem; margin: 0; }
   margin: 8px 0;
   text-decoration: none;
  }
-
- #experience {
-  scroll-margin-top: 65px;
-}
 
 .card {
   background: var(--surface);
@@ -254,9 +230,8 @@ html.splash body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: 101;
+  z-index: 100;
   background: radial-gradient(ellipse at 50% 45%, #14202b 0%, #0b0f14 65%);
-  /* background: #14202b; */
   opacity: 1;
   transition: opacity 0.9s ease;
 }
@@ -268,7 +243,7 @@ html.splash.splash-leaving body::before {
 /* The heading sits above the overlay, in light colours */
 html.splash #greet {
   position: relative;
-  z-index: 102;
+  z-index: 101;
   color: #f5f7fa;
   animation: none;
 }
