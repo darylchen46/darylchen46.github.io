@@ -114,7 +114,7 @@ h4 { font-size: 1rem; margin: 0; }
   font-size: 0.9rem;
 }
 
-.skills dt { font-weight: 600; margin-top: 12px; }
+.skills dt { font-weight: 600; margin-top: 0px; }
 .skills dd { margin: 6px 0 0; color: var(--muted); }
 .skills-logo { margin-right: 6px; vertical-align: middle; }
 
