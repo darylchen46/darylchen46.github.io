@@ -81,7 +81,7 @@ h4 { font-size: 1rem; margin: 0; }
   content: "";
   position: absolute;
   left: 8px;
-  bottom: -0.01em;
+  bottom: -0.05em;
   height: 0.9em;
   border-left: 0.1em solid var(--accent);
   animation: blink 1s infinite;
