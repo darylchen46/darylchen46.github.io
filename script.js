@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const START_DELAY = playSplash ? 700 : 1000; // pause before typing starts
   const HOLD = 900;                          // pause after typing, before the name moves
   const MOVE = 1000;                         // must match the transition in style.css
-  const MAX_SCALE = 2;                       // how large the name gets on the splash screen
+  const MAX_SCALE = 4;                       // how large the name gets on the splash screen
 
   // Build: [typed text][cursor][invisible remaining text]
   // The invisible part reserves the final width, so the name stays centred while typing.
